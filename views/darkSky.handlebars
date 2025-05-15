@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- Meta Tag -->
+        <meta charset="utf-8">
+        <meta name="description" content="Formulario de Contacto">
+        <meta name="keywords" content="Nodejs,UIkit,Nodemailer,Expressjs">
+        <meta name="author" content="Autor">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- Title -->
+        <title>Contáctanos</title>
+
+        <!-- Font -->
+        <link href="https://fonts.googleapis.com/css?family=Raleway:400,500" rel="stylesheet">
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" href="/public/css/darkSky.css">
+        <link rel="stylesheet" href="/public/css/fontawesome.min.css">
+    </head>
+    <body>
+        <!-- Container -->
+        <div class="container">
+            <div class="row justify-content-center">
+
+                <!-- Left Column -->
+                <div class="col-lg-4 left-column">
+                    <div class="tittle-container">
+                        <h2 class="tittle">Ponte en contacto</h2>
+                        <h4 class="subtitle">Nos encantaría saber de ti</h4>
+                    </div>
+
+                    <!-- Form -->
+                    <form class="contact-form" method="POST" action="send" enctype="multipart/form-data">
+                        {{{msg}}}
+
+                        <!-- Name -->
+                        <div class="form-group row">
+                            <label class="col-lg-4 col-form-label">Nombres y apellidos</label>
+                            <div class="col-lg-8">
+                                <input type="text" name="name" class="form-control form-control-sm" required>
+                            </div>
+                        </div>
+
+                        <!-- Phone -->
+                        <div class="form-group row">
+                            <label class="col-lg-4 col-form-label">Numero de celular</label>
+                            <div class="col-lg-8">
+                                <input type="text" name="phone" class="form-control form-control-sm" required>
+                            </div>
+                        </div>
+
+                        <!-- Email -->
+                        <div class="form-group row">
+                            <label class="col-lg-4 col-form-label">Correo Electrónico</label>
+                            <div class="col-lg-8">
+                                <input type="email" name="email" class="form-control form-control-sm" required>
+                            </div>
+                        </div>
+
+                        <!-- Photo Reference -->
+                        <div class="form-group row">
+                            <label class="col-lg-4 col-form-label">Foto del Aviso (opcional)</label>
+                            <div class="col-lg-8">
+                                <input type="file" name="photo_references" class="form-control form-control-sm" accept="image/*">
+                            </div>
+                        </div>
+
+                        <!-- Message -->
+                        <div class="form-group row">
+                            <label class="col-lg-4 col-form-label">Mensaje</label>
+                            <div class="col-lg-8">
+                                <textarea class="form-control form-control-sm" name="message" rows="5" required></textarea>
+                            </div>
+                        </div>
+
+                        <!-- Submit Button -->
+                        <div class="text-right">
+                            <input class="btn btn-submit" type="submit" value="Enviar">
+                        </div>
+                    </form>
+
+                    <!-- Social -->
+                    <div class="social">
+                        <div class="text-center center-block">
+                            <a href="#"><i class="icon fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="icon fab fa-twitter"></i></a>
+                            <a href="#"><i class="icon fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Left Column -->
+
+                <!-- Right Column -->
+                <div class="col-lg-6 right-column">
+                    <iframe
+                      width="100%"
+                      height="100%"
+                      frameborder="0"
+                      style="border:0; min-height: 100%;"
+                      src="https://www.google.com/maps/embed/v1/place?key=AIzaSyDjtHsAsVxJEdSjX3gH2-rEhNcQIjxlbNc&q=80+Guild+Street,+London,+N7+8EP"
+                      allowfullscreen>
+                    </iframe>
+                </div>
+                <!-- End Right Column -->
+
+            </div>
+        </div>
+
+        <!-- JavaScript -->
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    </body>
+</html>
