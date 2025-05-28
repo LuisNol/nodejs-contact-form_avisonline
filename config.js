@@ -5,7 +5,7 @@ module.exports = {
     // Configuración del servidor SMTP
     service: 'gmail', // Usar el servicio de Gmail directamente
     user: "avisonlinestoreperu@gmail.com", // Tu correo de Gmail
-    pass: "pnni dflv whvp nzjn", // La contraseña de la aplicación generada
+    pass: "ujev nsut fjcs qafy", // La contraseña de la aplicación generada
 
     // Correo del remitente y destinatario
     from: '"Contact Me" <avisonlinestoreperu@gmail.com>', // El correo desde el cual se enviarán los mensajes
